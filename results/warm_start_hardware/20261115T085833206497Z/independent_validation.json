@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "real_qpu_device": "aws:rigetti:qpu:cepheus-1-108q",
+  "completed_qpu_circuits": 10,
+  "raw_hardware_shots": 2000,
+  "valid_hardware_days": 2,
+  "selected_rows_verified_in_hardware_counts": true,
+  "source_data_hashes_match": true,
+  "max_reserved_credits": 385.0,
+  "no_simulated_hardware_replacement": true
+}

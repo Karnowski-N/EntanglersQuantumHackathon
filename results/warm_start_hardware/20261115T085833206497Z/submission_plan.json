@@ -1,0 +1,59 @@
+{
+  "device": "aws:rigetti:qpu:cepheus-1-108q",
+  "quote": {
+    "device": "aws:rigetti:qpu:cepheus-1-108q",
+    "rates": {
+      "perTask": 30.0,
+      "perShot": 0.0425,
+      "perMinute": 0.0
+    },
+    "shots_per_job": 200,
+    "max_jobs": 10,
+    "estimated_credits_per_job": 38.5,
+    "max_estimated_credits": 385.0,
+    "at_utc": "2026-11-15T08:58:33.443727+00:00"
+  },
+  "settings": {
+    "fleets": [
+      5,
+      10
+    ],
+    "hours": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "shots": 200,
+    "seed": 9100,
+    "p": 1,
+    "slack_qubits": 3,
+    "warm_start_state": true,
+    "refinement": false,
+    "renewables": false,
+    "ramps": false,
+    "training": "warm-start p=1; six fixed angles, 256 local simulated training shots each; fresh 200 final shots",
+    "physical_measurements": "pending",
+    "initial_full_day_milp": true,
+    "milp_tail": true,
+    "strict": true,
+    "bit_order": "qBraid AWS: classical bit 0 is rightmost",
+    "max_jobs": 10,
+    "max_retries": 0
+  },
+  "first_circuits": [
+    {
+      "fleet": 5,
+      "file": "fleet5_hour13.qasm",
+      "qubits": 7
+    },
+    {
+      "fleet": 10,
+      "file": "fleet10_hour13.qasm",
+      "qubits": 11
+    }
+  ],
+  "later_circuits": "adapt to measured schedule history using the same tested implementation; stop a fleet if no feasible sample",
+  "no_hardware_jobs_submitted": true
+}

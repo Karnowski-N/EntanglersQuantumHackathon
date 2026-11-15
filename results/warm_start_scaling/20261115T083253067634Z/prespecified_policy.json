@@ -1,0 +1,93 @@
+{
+  "settings": {
+    "fleets": [
+      5,
+      10,
+      25,
+      50,
+      100
+    ],
+    "quantum_hours": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "p": 1,
+    "training_angles": [
+      [
+        0.4,
+        0.4
+      ],
+      [
+        0.4,
+        1.1
+      ],
+      [
+        1.2,
+        0.4
+      ],
+      [
+        1.2,
+        1.1
+      ],
+      [
+        2.6,
+        0.4
+      ],
+      [
+        2.6,
+        1.1
+      ]
+    ],
+    "training_shots_per_angle": 256,
+    "final_shots": 200,
+    "training_bond": 64,
+    "final_bond": 128,
+    "seed": 9100,
+    "trajectories_per_fleet": 1,
+    "selection": "feasibility LCB then feasible true-cost lower-tail mean; fixed before held-out final samples",
+    "warm_seed": "greedy marginal/startup/no-load merit order, no optimal hourly row",
+    "epsilon": "min(0.15, 1 / number_of_free_plants); slack flip probability 0.15",
+    "exact_forced_reduction": true,
+    "group_partition": false,
+    "renewables": false,
+    "ramps": false,
+    "physical_qpu": false,
+    "noise_model": false,
+    "initial_full_day_milp": true,
+    "milp_tail": true,
+    "slack_qubits": 3,
+    "final_failure_policy": "stop, no repair or retry",
+    "controls": [
+      "greedy",
+      "biased_random_200",
+      "biased_random_budget",
+      "local_search"
+    ],
+    "classical_total_budget": 1736,
+    "cloud_batching": "all fleet sizes in shared hour batches; wall time is not attributable to individual fleets"
+  },
+  "source_sha256": {
+    "warm_start_scaling.py": "fe6607b9a165ddf8e24e4bcd0479e8681dc13790bd7c7470bd5ca98beef8c472",
+    "warm_start_local_mps.py": "f3510d6054fc222d744a5f9f681a8ab540f6c2233e18146991057912c5b23b9a",
+    "mimiq_mps_pilot.py": "b711b283bd66a5848c024fe344ee7ce27d0a72e97f0f825e0c59bdf60e3925da",
+    "mimiq_feasibility_training.py": "f8e518b1932717064b42b523000ed42a627ec07469d9b9f85b0973991fb1856f",
+    "reduced_quantum_method.py": "8b4ba21dad7c3f6049a8a47e20e59ef29b44e60320e61988a879beba5b79d787",
+    "rq_classical.py": "8a1a79b01c6a66185fbc6489cbda8a9ae380fed9a354c03fca82616929049193",
+    "check.py": "fd7c8238d2fe70166d667083b50c55fe55f9b89b51998b0f77ad05cdb4b19f21"
+  },
+  "input_sha256": {
+    "plants.csv": "cc3a6e8d7e8cd9d79ec251e28b4b44d035a7a7e466051aabab7119139e727d71",
+    "demand.csv": "b3c0a18a21c54ad8b96a01678b3ab7a8e87a4d0d68d9d77ff0efc391f66ad804",
+    "plants10.csv": "d64339a25b4fa3daf84ebdee2fb66e8dbb7554a2dca52c943e02b6beb758a747",
+    "demand10.csv": "b3ad50f880b4cbb9edb0ab1dd4c602d35cc617b7064538c2de42087771cc9466",
+    "plants25.csv": "a841bc09cd2d153c1fbf03c18f2b66808d2bb3d3756b313db687677877b0e2f3",
+    "demand25.csv": "5360aedefe8f162a322fb3b5eb9d0161e72640a11c0372f108e34f8b12a440c6",
+    "plants50.csv": "8dde28a81d52d07beaf5eddcf36670497ca265e4ae922293c14cd92acb608233",
+    "demand50.csv": "1f528543b6d8930ea7bb7211d959ab5635aca1e98350121b2119bf309fe7dd54",
+    "plants100.csv": "db926459befb0808da6ba84205e3e47641e668871ad71e388803eceb91edc7f8",
+    "demand100.csv": "3f9d98ba90075f7a4e7ecf54dba7258d4d72a7626a50eb5f7eb9be7503969bda"
+  }
+}

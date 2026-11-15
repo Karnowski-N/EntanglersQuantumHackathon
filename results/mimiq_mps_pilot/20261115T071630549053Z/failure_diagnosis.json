@@ -1,0 +1,25 @@
+{
+  "hour": 14,
+  "forced_on": 21,
+  "forced_off": 4,
+  "available_max_capacity": 11700.0,
+  "required_capacity": 11004.0,
+  "forced_minimum_output": 1583.0,
+  "demand": 10004.0,
+  "diagnostic_only": true,
+  "prefix_has_feasible_completion": true,
+  "diagnostic_completion_cost": 5179108.1899999995,
+  "certificates": [
+    {
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "has_incumbent": true
+    }
+  ],
+  "diagnostic_seconds": 0.5245187389664352,
+  "sample_violations": {
+    "reserve": 200,
+    "minimum_output": 0,
+    "locks": 0
+  }
+}

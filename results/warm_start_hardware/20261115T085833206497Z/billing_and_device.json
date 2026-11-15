@@ -1,0 +1,9 @@
+{
+  "checked_utc": "2026-11-15T09:09:45.167484+00:00",
+  "jobs": 10,
+  "completed_hardware_jobs": 10,
+  "reported_total_job_credits": 385.0,
+  "verified_remaining_qbraid_credits": 115.0,
+  "agreed_max_credits": 385,
+  "actual_provider_device": "aws:rigetti:qpu:cepheus-1-108q"
+}

@@ -1,0 +1,15 @@
+{
+  "all_checks_passed": true,
+  "checked_large_circuits": 20,
+  "checked_large_shots": 8992,
+  "selected_rows_observed_and_cheapest_legal": true,
+  "valid_complete_day": false,
+  "first_hour_bond_counts_identical": true,
+  "zero_reported_job_costs": true,
+  "data_sha256": {
+    "data/plants10.csv": "d64339a25b4fa3daf84ebdee2fb66e8dbb7554a2dca52c943e02b6beb758a747",
+    "data/demand10.csv": "b3ad50f880b4cbb9edb0ab1dd4c602d35cc617b7064538c2de42087771cc9466",
+    "data/plants100.csv": "db926459befb0808da6ba84205e3e47641e668871ad71e388803eceb91edc7f8",
+    "data/demand100.csv": "3f9d98ba90075f7a4e7ecf54dba7258d4d72a7626a50eb5f7eb9be7503969bda"
+  }
+}

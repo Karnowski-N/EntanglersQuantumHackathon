@@ -1,0 +1,10 @@
+{
+  "all_checks_passed": true,
+  "trials": 362,
+  "returned_schedules": 295,
+  "valid_schedules": 295,
+  "failed_trials": 67,
+  "quantum_measurement_logs_replayed": 1085,
+  "source_hashes_verified": true,
+  "seconds": 7.741869421908632
+}

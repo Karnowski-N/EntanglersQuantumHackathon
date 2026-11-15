@@ -1,0 +1,27 @@
+[
+  {
+    "fleet": 5,
+    "transpile_and_mps_seconds": 0.4509470022749156,
+    "baseline_wall_seconds": 0.0602634830866009
+  },
+  {
+    "fleet": 10,
+    "transpile_and_mps_seconds": 0.8950643497519195,
+    "baseline_wall_seconds": 0.09784460510127246
+  },
+  {
+    "fleet": 25,
+    "transpile_and_mps_seconds": 7.146673389477655,
+    "baseline_wall_seconds": 0.30339293112047017
+  },
+  {
+    "fleet": 50,
+    "transpile_and_mps_seconds": 39.88585501303896,
+    "baseline_wall_seconds": 0.8171116679441184
+  },
+  {
+    "fleet": 100,
+    "transpile_and_mps_seconds": 166.28060030937195,
+    "baseline_wall_seconds": 1.1542749961372465
+  }
+]

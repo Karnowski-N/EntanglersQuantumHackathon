@@ -1,0 +1,142 @@
+[
+  {
+    "jobQrn": "aws:rigetti:qpu:cepheus-1-108q-69e6-qjob-6af9748be538ce0882fae20e",
+    "deviceQrn": "aws:rigetti:qpu:cepheus-1-108q",
+    "status": "COMPLETED",
+    "provider": "rigetti",
+    "vendor": "aws",
+    "shots": 200,
+    "cost": 38.5,
+    "timeStamps": {
+      "createdAt": "2026-11-15T09:00:00.314000Z",
+      "endedAt": "2026-11-15T09:00:05.284000Z",
+      "executionDuration": 4970
+    }
+  },
+  {
+    "jobQrn": "aws:rigetti:qpu:cepheus-1-108q-69e6-qjob-6af974c4e538ce0882fae21f",
+    "deviceQrn": "aws:rigetti:qpu:cepheus-1-108q",
+    "status": "COMPLETED",
+    "provider": "rigetti",
+    "vendor": "aws",
+    "shots": 200,
+    "cost": 38.5,
+    "timeStamps": {
+      "createdAt": "2026-11-15T09:00:55.365000Z",
+      "endedAt": "2026-11-15T09:01:05.842000Z",
+      "executionDuration": 10477
+    }
+  },
+  {
+    "jobQrn": "aws:rigetti:qpu:cepheus-1-108q-69e6-qjob-6af974dfe538ce0882fae22d",
+    "deviceQrn": "aws:rigetti:qpu:cepheus-1-108q",
+    "status": "COMPLETED",
+    "provider": "rigetti",
+    "vendor": "aws",
+    "shots": 200,
+    "cost": 38.5,
+    "timeStamps": {
+      "createdAt": "2026-11-15T09:01:21.261000Z",
+      "endedAt": "2026-11-15T09:01:24.471000Z",
+      "executionDuration": 3210
+    }
+  },
+  {
+    "jobQrn": "aws:rigetti:qpu:cepheus-1-108q-69e6-qjob-6af97519e538ce0882fae28b",
+    "deviceQrn": "aws:rigetti:qpu:cepheus-1-108q",
+    "status": "COMPLETED",
+    "provider": "rigetti",
+    "vendor": "aws",
+    "shots": 200,
+    "cost": 38.5,
+    "timeStamps": {
+      "createdAt": "2026-11-15T09:02:21.454000Z",
+      "endedAt": "2026-11-15T09:02:30.387000Z",
+      "executionDuration": 8933
+    }
+  },
+  {
+    "jobQrn": "aws:rigetti:qpu:cepheus-1-108q-69e6-qjob-6af97552e538ce0882fae2a1",
+    "deviceQrn": "aws:rigetti:qpu:cepheus-1-108q",
+    "status": "COMPLETED",
+    "provider": "rigetti",
+    "vendor": "aws",
+    "shots": 200,
+    "cost": 38.5,
+    "timeStamps": {
+      "createdAt": "2026-11-15T09:03:15.663000Z",
+      "endedAt": "2026-11-15T09:03:19.369000Z",
+      "executionDuration": 3706
+    }
+  },
+  {
+    "jobQrn": "aws:rigetti:qpu:cepheus-1-108q-69e6-qjob-6af9758ce538ce0882fae2b7",
+    "deviceQrn": "aws:rigetti:qpu:cepheus-1-108q",
+    "status": "COMPLETED",
+    "provider": "rigetti",
+    "vendor": "aws",
+    "shots": 200,
+    "cost": 38.5,
+    "timeStamps": {
+      "createdAt": "2026-11-15T09:04:14.710000Z",
+      "endedAt": "2026-11-15T09:04:23.543000Z",
+      "executionDuration": 8833
+    }
+  },
+  {
+    "jobQrn": "aws:rigetti:qpu:cepheus-1-108q-69e6-qjob-6af975c5e538ce0882fae2c4",
+    "deviceQrn": "aws:rigetti:qpu:cepheus-1-108q",
+    "status": "COMPLETED",
+    "provider": "rigetti",
+    "vendor": "aws",
+    "shots": 200,
+    "cost": 38.5,
+    "timeStamps": {
+      "createdAt": "2026-11-15T09:05:15.447000Z",
+      "endedAt": "2026-11-15T09:05:19.147000Z",
+      "executionDuration": 3700
+    }
+  },
+  {
+    "jobQrn": "aws:rigetti:qpu:cepheus-1-108q-69e6-qjob-6af975ffe538ce0882fae2d5",
+    "deviceQrn": "aws:rigetti:qpu:cepheus-1-108q",
+    "status": "COMPLETED",
+    "provider": "rigetti",
+    "vendor": "aws",
+    "shots": 200,
+    "cost": 38.5,
+    "timeStamps": {
+      "createdAt": "2026-11-15T09:06:09.935000Z",
+      "endedAt": "2026-11-15T09:06:18.564000Z",
+      "executionDuration": 8629
+    }
+  },
+  {
+    "jobQrn": "aws:rigetti:qpu:cepheus-1-108q-69e6-qjob-6af97638e538ce0882fae2e4",
+    "deviceQrn": "aws:rigetti:qpu:cepheus-1-108q",
+    "status": "COMPLETED",
+    "provider": "rigetti",
+    "vendor": "aws",
+    "shots": 200,
+    "cost": 38.5,
+    "timeStamps": {
+      "createdAt": "2026-11-15T09:07:07.063000Z",
+      "endedAt": "2026-11-15T09:07:10.492000Z",
+      "executionDuration": 3429
+    }
+  },
+  {
+    "jobQrn": "aws:rigetti:qpu:cepheus-1-108q-69e6-qjob-6af97654e538ce0882fae2f3",
+    "deviceQrn": "aws:rigetti:qpu:cepheus-1-108q",
+    "status": "COMPLETED",
+    "provider": "rigetti",
+    "vendor": "aws",
+    "shots": 200,
+    "cost": 38.5,
+    "timeStamps": {
+      "createdAt": "2026-11-15T09:07:36.401000Z",
+      "endedAt": "2026-11-15T09:07:55.303000Z",
+      "executionDuration": 18902
+    }
+  }
+]

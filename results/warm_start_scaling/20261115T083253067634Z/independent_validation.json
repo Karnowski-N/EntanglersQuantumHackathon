@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "result_sets": 178,
+  "simulator_shots": 51792,
+  "cloud_shots": 0,
+  "valid_schedules_rechecked": 25,
+  "minimum_reported_mps_fidelity": null,
+  "reported_cloud_cost": 0.0,
+  "source_hashes_match": true,
+  "input_hashes_match": true,
+  "selected_quantum_rows_are_fresh_samples": true,
+  "exact_reduction_replayed_on_observed_samples": true,
+  "phase_and_mixer_nonzero": true,
+  "large_statevectors_allocated": false
+}

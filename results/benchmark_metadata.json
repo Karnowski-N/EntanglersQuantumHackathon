@@ -1,0 +1,13 @@
+{
+  "milp_cost": 327924.49,
+  "milp_runtime_s": 0.06442542700096965,
+  "environment": "local ideal statevector simulation",
+  "sampling_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "layers": 1
+}

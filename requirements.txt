@@ -1,0 +1,15 @@
+# Python 3.12. Notebook numerics use the recorded qBraid-SDK environment versions.
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+qiskit==2.5.2
+qiskit-aer==0.18.2
+qiskit-qasm3-import==0.6.0
+ipython==9.17.1
+ipykernel>=6,<8
+nbformat>=5.10,<6
+nbclient>=0.10,<1
+
+# The hardware runner needs the platform SDK API, newer than the notebook SDK.
+qbraid==0.13.0
+qbraid-core==0.6.53
