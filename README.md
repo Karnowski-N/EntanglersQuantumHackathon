@@ -1,6 +1,3 @@
-# EntanglersQuantumHackathon
-Tennessee Quantum Hackathon at the University of Tennessee at Chattanooga
-
 # Hybrid Quantum-Classical Optimization for Power Plant Scheduling
 
 ## Project Overview
