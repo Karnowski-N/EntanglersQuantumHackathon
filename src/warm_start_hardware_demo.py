@@ -102,7 +102,7 @@ def prepare(output=None):
             physical_measurements='pending',initial_full_day_milp=True,milp_tail=True,strict=True,
             bit_order='qBraid AWS: classical bit 0 is rightmost',max_jobs=10,max_retries=0),
         quote=pricing,jobs=[],fleets={},approval=None,hardware_complete=False,
-        source_sha256={name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in
+        source_sha256={name:hashlib.sha256((ROOT/'src'/name).read_bytes()).hexdigest() for name in
             ['warm_start_hardware_demo.py','warm_start_scaling.py','mimiq_feasibility_training.py','reduced_quantum_method.py','rq_classical.py','check.py']})
     record['input_sha256']={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for n in FLEETS for p in
         [ROOT/'data'/('plants'+('' if n==5 else str(n))+'.csv'),ROOT/'data'/('demand'+('' if n==5 else str(n))+'.csv')]}
@@ -137,7 +137,7 @@ def run_hardware(output,approved_credits):
     if approved_credits<=0:raise ValueError('Explicit positive approved credit ceiling required')
     if record['hardware_complete']:return record
     for name,digest in record.get('source_sha256',{}).items():
-        if hashlib.sha256((ROOT/name).read_bytes()).hexdigest()!=digest:raise RuntimeError('Implementation changed after preparation; prepare and review a new plan')
+        if hashlib.sha256((ROOT/'src'/name).read_bytes()).hexdigest()!=digest:raise RuntimeError('Implementation changed after preparation; prepare and review a new plan')
     for name,digest in record.get('input_sha256',{}).items():
         if hashlib.sha256((ROOT/'data'/name).read_bytes()).hexdigest()!=digest:raise RuntimeError('Input data changed after preparation')
     if record['approval'] is None:
@@ -146,7 +146,7 @@ def run_hardware(output,approved_credits):
     budget=min(approved_credits,record['approval']['credit_ceiling'],385.0)
     if not record['settings'].get('warm_start_state'):raise RuntimeError('This runner only executes the selected warm-start method')
     for name,sha in record['source_sha256'].items():
-        if hashlib.sha256((ROOT/name).read_bytes()).hexdigest()!=sha:raise RuntimeError('Source changed since preparation: '+name)
+        if hashlib.sha256((ROOT/'src'/name).read_bytes()).hexdigest()!=sha:raise RuntimeError('Source changed since preparation: '+name)
     for name,sha in record['input_sha256'].items():
         if hashlib.sha256((ROOT/'data'/name).read_bytes()).hexdigest()!=sha:raise RuntimeError('Input changed since preparation: '+name)
     dump(output/'experiment.json',record)

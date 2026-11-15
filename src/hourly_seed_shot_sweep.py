@@ -258,7 +258,7 @@ def run_sweep(fleets=(5,10), seeds=tuple(range(101,111)), shots=(5,10,20,50,100,
         sources += [f'data/plants{suffix}.csv',f'data/demand{suffix}.csv']
     result=dict(settings=settings,references={},runs=[],output_dir=str(output),complete=False,
         software={name:importlib.metadata.version(name) for name in ('numpy','scipy','qiskit')},
-        source_sha256={name:hashlib.sha256((rq.HERE/name).read_bytes()).hexdigest() for name in sources})
+        source_sha256={name:hashlib.sha256((rq.HERE/'src'/name).read_bytes()).hexdigest() for name in sources})
     dump(output/'manifest.json', {k:v for k,v in result.items() if k!='runs'})
     started=time.perf_counter(); attempted=0
     def record(row):

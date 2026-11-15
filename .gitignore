@@ -11,3 +11,8 @@ results/*_development/
 results/**/*_before_*.ipynb
 results/**/executed_*.ipynb
 results/**/source_before_*.py
+
+# Local historical copies; the organized notebooks are the submission.
+experiments/starter_original.ipynb
+experiments/hybrid_benchmark_cell.py
+docs/legacy_notes/

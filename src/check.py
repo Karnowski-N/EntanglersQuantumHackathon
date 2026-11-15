@@ -18,7 +18,7 @@ import numpy as np
 from scipy.optimize import Bounds, LinearConstraint, milp
 from scipy.sparse import lil_matrix
 
-DATA = Path(__file__).resolve().parent / "data"
+DATA = Path(__file__).resolve().parent.parent / "data"
 TEXT_COLUMNS = ("plant_id", "type", "rts_gen_uid")
 
 

@@ -16,8 +16,9 @@ from qiskit.circuit import ParameterVector
 from qiskit.quantum_info import Statevector
 from rq_candidate_checks import candidate_results
 
-HERE=Path(__file__).resolve().parent
-spec=importlib.util.spec_from_file_location('_rq_local_checker',HERE/'check.py')
+SOURCE=Path(__file__).resolve().parent
+HERE=SOURCE.parent
+spec=importlib.util.spec_from_file_location('_rq_local_checker',SOURCE/'check.py')
 ck=importlib.util.module_from_spec(spec);spec.loader.exec_module(ck)
 DEFAULT_MAX_QUBITS=18
 
@@ -102,7 +103,7 @@ def make_namespace(fleet_count=10,n_slack=3,max_qubits=DEFAULT_MAX_QUBITS,strict
             BLOCK_MW=50,hours=np.arange(len(demand)),names=[p['plant_id'] for p in plants],INDEX_BITS=None,PLANT_INDEX=None,
             Statevector=Statevector,check_schedule=ck.check_schedule,check_hour=ck.check_hour,hour_ok=ck.hour_ok,
             hour_cost=ck.hour_cost,locks=ck.locks,qaoa_circuit=qaoa_circuit,max_qubits=max_qubits,strict=strict)
-    exec(compile((HERE/'rq_classical.py').read_text(),'rq_classical.py','exec'),ns)
+    exec(compile((SOURCE/'rq_classical.py').read_text(),'rq_classical.py','exec'),ns)
     def run_qaoa(Q,offset,p=1,start=None,maxiter=60):
         a,pr,info=tune_qaoa(Q,offset,p,start,maxiter,max_qubits=ns['max_qubits'],statevector=ns['Statevector'])
         ns['_fit_info']=info
@@ -342,7 +343,7 @@ def run_final_study(fleets=(5,10),seeds=(7,8,9,17,18,19),quantum_hours=tuple(ran
     for fleet in fleets:
         suffix='' if fleet==5 else str(fleet)
         sources.extend([f'data/plants{suffix}.csv',f'data/demand{suffix}.csv'])
-    result['source_sha256']={name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in sources}
+    result['source_sha256']={name:hashlib.sha256((SOURCE/name).read_bytes()).hexdigest() for name in sources}
     def save():
         (output/'results.json').write_text(json.dumps(result,indent=2,default=json_default)+'\n')
     for fleet in fleets:

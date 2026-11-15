@@ -9,7 +9,7 @@ import hourly_seed_shot_sweep as s
 class SweepTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.prior=json.loads((Path(__file__).resolve().parent/'data/test_reference_schedules.json').read_text())['prior_hourly']
+        cls.prior=json.loads((Path(__file__).resolve().parent.parent/'data/test_reference_schedules.json').read_text())['prior_hourly']
 
     def test_fresh_runner_preserves_hourly_schedule_and_samples(self):
         for fleet in (5,10):

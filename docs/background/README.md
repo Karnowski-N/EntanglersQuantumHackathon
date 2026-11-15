@@ -1,12 +1,12 @@
 # Background: what TVA asked, and reading
 
-TVA (the Tennessee Valley Authority) wrote two problems for this hackathon. This track is the second, unit commitment. This folder holds TVA's problem in its own words and the reading TVA shared. **Follow this track's [README](../README.md) for what to build and submit.** Use this folder to understand your customer: what TVA wants, and why.
+TVA (the Tennessee Valley Authority) wrote two problems for this hackathon. This track is the second, unit commitment. This folder holds TVA's problem in its own words and the reading TVA shared. **Follow this track's [README](../assignment.md) for what to build and submit.** Use this folder to understand your customer: what TVA wants, and why.
 
 | File | What it is |
 |---|---|
 | This page | TVA's problem, word for word, and what changed for this event |
 | | In qBraid Lab, open the two files below from the file browser on the left (their links work on GitHub) |
-| [`TVA-Unit-Commitment-and-Economic-Dispatch-Overview.md`](./TVA-Unit-Commitment-and-Economic-Dispatch-Overview.md) | TVA's overview of how utilities decide which plants run and how much each produces (Nov 2). The track README's [Background from TVA](../README.md#background-from-tva) sums it up. Useful for your value story: the cost components, the constraints, and how the decision is made |
+| [`TVA-Unit-Commitment-and-Economic-Dispatch-Overview.md`](./TVA-Unit-Commitment-and-Economic-Dispatch-Overview.md) | TVA's overview of how utilities decide which plants run and how much each produces (Nov 2). The track README's [Background from TVA](../assignment.md#background-from-tva) sums it up. Useful for your value story: the cost components, the constraints, and how the decision is made |
 | [`TVA-Generic-Data-for-Hackathon.md`](./TVA-Generic-Data-for-Hackathon.md) | TVA's note on which open data to use (Nov 2). It recommends RTS-GMLC, which is where this track's data comes from |
 
 ## What TVA asked
@@ -29,7 +29,7 @@ TVA (the Tennessee Valley Authority) wrote two problems for this hackathon. This
 > - RTS-GMLC (CSV + MATPOWER/PLEXOS formats) for generators, costs, time series load/reserve; includes modern fuel mixes, storage and renewables.
 > - MATPOWER case files for smaller instances if desired (e.g., case24_ieee_rts).
 
-*From TVA's problem set (Aug 25). TVA's data links are in the track README's [Links](../README.md#links).*
+*From TVA's problem set (Aug 25). TVA's data links are in the track README's [Links](../assignment.md#links).*
 
 ## What's different here
 

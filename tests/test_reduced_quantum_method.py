@@ -7,7 +7,7 @@ from unittest.mock import patch
 import numpy as np
 import reduced_quantum_method as m
 
-REFERENCE_DATA=Path(__file__).resolve().parent/'data/test_reference_schedules.json'
+REFERENCE_DATA=Path(__file__).resolve().parent.parent/'data/test_reference_schedules.json'
 
 class ReducedMethodTests(unittest.TestCase):
     @classmethod

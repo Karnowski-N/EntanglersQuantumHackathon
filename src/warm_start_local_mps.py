@@ -16,7 +16,7 @@ class LocalPilot:
         self.output=Path(output);self.output.mkdir(parents=True,exist_ok=False)
         self.record=dict(device='local:qiskit_aer:matrix_product_state',backend_kind='local_ideal_mps',
             pricing=dict(perTask=0.,perShot=0.,perMinute=0.),created_utc=datetime.now(timezone.utc).isoformat(),
-            jobs=[],complete=False,source_sha256={name:hashlib.sha256((w.m.ROOT/name).read_bytes()).hexdigest() for name in
+            jobs=[],complete=False,source_sha256={name:hashlib.sha256((w.m.ROOT/'src'/name).read_bytes()).hexdigest() for name in
             ['warm_start_scaling.py','warm_start_local_mps.py','mimiq_mps_pilot.py','mimiq_feasibility_training.py','reduced_quantum_method.py','rq_classical.py','check.py']},
             versions={name:importlib.metadata.version(name) for name in ('qiskit','qiskit-aer','numpy','scipy')},
             local_options=dict(max_parallel_threads=1,matrix_product_state_truncation_threshold=1e-12,

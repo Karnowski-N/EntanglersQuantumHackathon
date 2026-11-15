@@ -19,7 +19,7 @@ from qiskit.quantum_info import Statevector
 
 from check import (load_plants, load_demand, check_schedule, hour_ok, hour_cost, locks)
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 
 
 def refine(plants, demand, reserve, proposal=None, radius=None, time_limit=10):

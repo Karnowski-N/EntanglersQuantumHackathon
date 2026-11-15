@@ -74,7 +74,7 @@ class Pilot:
                 model='gross demand; original reserve; no ramps; original 3 slack qubits',
                 quantum_hours=list(range(13,18)),training='fixed 8-angle sampled-energy grid on MIMIQ; no exact large-state expectation',
                 physical_qpu=False,noise_model=False,group_partition=False),jobs=[],complete=False,
-            source_sha256={name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in ['mimiq_mps_pilot.py','reduced_quantum_method.py','rq_classical.py','check.py']})
+            source_sha256={name:hashlib.sha256((ROOT/'src'/name).read_bytes()).hexdigest() for name in ['mimiq_mps_pilot.py','reduced_quantum_method.py','rq_classical.py','check.py']})
         self.save()
     def save(self):dump(self.output/'pilot.json',self.record)
     def submit(self,circuits,label,shots,bond,seed):
